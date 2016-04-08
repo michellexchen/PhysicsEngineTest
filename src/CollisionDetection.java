@@ -73,7 +73,8 @@ public class CollisionDetection {
 		String triggerString = a1.getName() + collisionType + a2.getName();
 		System.out.print(triggerString+"\n");
 		if(collisionType == "SideCollision"){
-			myPhysicsEngine.reverseXVelo(a1);
+			//myPhysicsEngine.reverseXVelo(a1);
+			myPhysicsEngine.staticXVelo(a1);
 		}else if(collisionType == "TopCollision" || collisionType == "BottomCollision"){
 			myPhysicsEngine.reverseYVelo(a1);
 		}

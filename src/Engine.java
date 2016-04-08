@@ -133,10 +133,12 @@ public class Engine {
 		a1.setxVelo(-a1.getxVelo()*2);
 	}
 
-
 	public void reverseYVelo(Actor a1) {
 		a1.setyVelo(-a1.getyVelo()*2);
 	}
 	
+	public void staticCollision(Actor a1) {
+		a1.setxVelo(0);
+	}
 	
 }
